@@ -1,0 +1,55 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4,1,fr);
+    gap: 10px;
+    margin-top: 20px auto;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+    grid-template-columns: repeat(4,300px);
+    gap: ;
+
+}
+.grid-item{
+    background-color: var(--main-brand-color);
+    color: var(--text-color);
+    font-size: var(--font-size-small);
+    padding: 20px;
+}
+
+@media screen and (max-width: 1260px) {
+    .grid-container {
+        grid-template-columns: repeat(2,300px);
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .grid-container {
+        grid-template-columns: repeat(2,300px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: repeat(1,250px);
+    }
+}
+
+p{
+    background-color: blue;
+    display: block;
+}
+
+span{
+    background-color: yellow;
+}
+
+.google{
+    background-color: green;
+}
+
+.signup{
+    color: red;
+}
